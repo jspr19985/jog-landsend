@@ -1,0 +1,485 @@
+/* Signpost */
+.sv-signpost-outer {
+  top: 150px;
+  left: var(--generic-signpost-left);
+}
+
+.sv-signpost-top {
+  right: 50px;
+  padding-left: 5px;
+  width: 400px;
+}
+
+.sv-sp-triangle-right {
+  right: 20px;
+  top: 0;
+}
+
+.sv-signpost-bottom {
+  height: 220px;
+}
+
+/* Village */
+
+.scottish-village-outer{
+  position: absolute;
+  top: calc(var(--landscape-top-height) - var(--scottish-village-height));
+  height: var(--scottish-village-height);
+  left: var(--scottish-village-left);
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scottish-chimneys {
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scottish-chimney {
+  width: 20px;
+  background-color: var(--flesh);
+  border: thin solid black;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.scottish-chimney-white {
+  background-color: var(--white);
+}
+
+.scottish-roofs {
+  height: 115px;
+  display: flex;  
+}
+
+.scottish-roof-1, .scottish-roof-2, 
+.scottish-roof-3 {
+  height: 40px;  
+}
+
+.scottish-roof-1 { background-color: var(--regular-grey); }
+.scottish-roof-2 { background-color: var(--brown7); }
+.scottish-roof-3 { background-color: #e63900; }
+
+.scottish-houses {
+  height: 115px;
+  display: flex;  
+}
+
+.scottish-house-1, .scottish-house-2,
+.scottish-house-3 {
+  width: 200px;
+  border: thin solid black;
+  border-radius: 5px;
+}
+
+.scottish-house-1 { background-color: var(--flesh); }
+.scottish-house-2 { background-color: var(--brown6); }
+.scottish-house-3 { background-color: var(--white); }
+
+.scotiish-windows {
+  display: flex;
+  justify-content: space-around;
+}
+
+.scottish-house-window {
+  background-color: white;
+  border: medium solid black;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.scottish-house-doors {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 42px;
+  border-radius: 2px;
+}
+
+.scottish-house-door-1, .scottish-house-door-2, 
+.scottish-house-door-3 {
+  height: 40px;
+  width: 20px;  
+}
+
+.scottish-house-door-1 { background-color: var(--khaki); }
+.scottish-house-door-2 { background-color: var(--dark-brown); }
+.scottish-house-door-3 { background-color: var(--teal); }
+
+@keyframes braveheart-jump {
+  0% { transform: translateY(0px) scale(0.15) }
+  50% { transform: translateY(-30px) scale(0.15) }
+  100% { transform: translateY(0px) scale(0.15) }
+}
+
+.braveheart-outer {
+  position: relative;
+  height: var(--braveheart-height);
+  height: 100px;
+  left: var(--braveheart-left);
+  width: 300px;
+  transform: scale(0.15);
+  top: 280px;
+  animation: braveheart-jump 2s infinite;
+}
+
+.braveheart-head-and-neck {
+  position: relative;
+  height: 125px;
+}
+
+.braveheart-hair {
+  position: absolute;
+  top: -15px;
+  left: 83px;
+  height: 120px;
+  width: 115px;
+  background-color: var(--brown13);
+  border-radius: 40px 40px 0 0;
+  z-index: -20;
+}
+
+.braveheart-face, .braveheart-blue-face {
+  top: 10px;
+  left: 100px;
+  height: 75px;
+}
+
+.braveheart-face {
+  position: relative;  
+  background-color: var(--flesh);
+  width: 80px;
+  border-radius: 40% / 0 0 100% 100%; 
+  border: thick solid var(--face-paint-blue);
+}
+
+.braveheart-blue-face {
+  position: absolute;
+  background: var(--face-paint-blue);
+  width: 40px;  
+  border-radius: 0 0 0 100%;
+}
+
+.braveheart-neck {
+  position: absolute;
+  top: 85px;
+  left: 120px;
+  background: var(--flesh);
+  width: 40px;
+  height: 15px;
+}
+
+.braveheart-mouth {
+  position: relative;
+  top: -15px;
+  left: 130px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: var(--black);  
+}
+
+div[class*="braveheart-eye-"] {
+  position: relative;
+  width: 10px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--black);
+}
+
+.braveheart-eye-left { top: -75px; left: 110px; }
+
+.braveheart-eye-right { top: -80px; left: 150px; }
+
+.braveheart-nose {
+  position: relative;
+  top: -50px;
+  left: 132px;;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--black);
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(225deg);
+}
+
+.braveheart-body-top {
+  position: relative;
+  height: 125px;
+  width: 124px;
+  left: 80px;
+  background-color: var(--brown12);
+  display: flex;
+  flex-wrap: wrap
+}
+
+.braveheart-top-detail {
+  width: 31px;
+  height: 31px;
+  border: 0.1px solid var(--silver);
+}
+
+.braveheart-body-bottom {
+  height: 125px;
+  position: relative;
+}
+
+.braveheart-legs { position: relative; }
+
+.braveheart-left-leg, .braveheart-right-leg {
+  position: absolute;
+  top: 0;
+  background-color: var(--flesh);
+  height: 125px;
+  width: 40px; 
+}
+
+.braveheart-left-leg { left: 80px; }
+
+.braveheart-right-leg { left: 160px; }
+
+.braveheart-left-shoe, .braveheart-right-shoe {
+  position: relative;
+  background-color: var(--brown13);
+  height: 35px;
+  width: 80px;
+}
+
+.braveheart-left-shoe {  
+  left: 40px;
+  top: 90px;
+  border-top-left-radius: 30px;
+}
+
+.braveheart-left-shoe:after {
+  left: 40px;
+  top: -35px;
+}
+
+.braveheart-right-shoe {
+  left: 160px;
+  top: 55px;
+  border-top-right-radius: 30px;
+}
+
+.braveheart-right-shoe:after {  
+  left: 0;
+  top: -35px;
+}
+
+.braveheart-right-shoe:after, .braveheart-left-shoe:after {
+  content: '';
+  position: absolute;
+  background-color: var(--brown13);
+  height: 35px;
+  width: 40px;
+}
+
+.dark-tartan-color {
+  height: 10px;
+  width: 100px;
+  background-color: var(--dark-tartan);
+}
+.light-tartan-color {
+  height: 30px;
+  width: 100px;
+  background-color: var(--light-tartan);
+}
+
+.medium1-tartan-color, .medium2-tartan-color {
+  height: 20px;
+  width: 100px;
+}
+.medium1-tartan-color { background-color: var(--medium1-tartan); }
+.medium2-tartan-color { background-color: var(--medium2-tartan); }
+
+.tartan-v, .tartan-h {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 125px;
+  width: 200px;
+}
+
+.tartan-h:after {
+      content: '';
+      position: absolute;
+      left: -60px;
+      top: 0px;
+      width: 0;
+      height: 0;
+      border: 40px solid transparent;
+      border-top: 125px solid var(--blue);
+}
+
+.tartan-h:before {
+      content: '';
+      position: absolute;
+      left: 160px;
+      top: 0px;
+      width: 0;
+      height: 0;
+      border: 40px solid transparent;
+      border-top: 125px solid var(--blue);
+}
+
+.vertical-tartan-gradient {
+  background: repeating-linear-gradient(
+    to right,
+    var(--dark-tartan),
+    var(--light-tartan) 20px,
+    var(--dark-tartan) 20px,
+    var(--light-tartan) 80px
+  );
+}
+
+.horizontal-tartan-gradient {
+  background: repeating-linear-gradient(
+    var(--medium1-tartan),
+    var(--medium2-tartan) 40px,
+    var(--medium1-tartan) 40px,
+    var(--medium2-tartan) 80px
+  );
+}
+
+.quarter-ellipse {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  width: 150px;
+  height: 45px;
+  border-radius: 10px 0 100% 0; 
+  z-index: 20;
+  border-bottom: medium solid black;
+  z-index: 25;
+}
+
+.side-scarf {
+  position: absolute;
+  top: 105px;
+  left: 190px;
+  width: 40px;
+  height: 155px;
+  z-index: 20;
+}
+
+div[class*="braveheart-arm-"] {
+  position: absolute;
+  background-color: var(--flesh);
+  width: 120px;
+  height: 30px; 
+}
+
+div[class*="braveheart-lower-arm-"] {
+  position: absolute;
+  background-color: var(--flesh);
+  width: 20px;
+  height: 60px;
+}
+
+.braveheart-arm-right {  
+  top: 105px;
+  left: 220px;
+  transform: rotate(-20deg) translate(0, -20px);
+}
+
+.braveheart-arm-left {
+  top: 130px;
+  left:-20px;
+  transform: rotate(-10deg) translate(0, -20px);
+}
+
+.braveheart-lower-arm-right {
+  top: 35px;
+  left:320px;
+}
+
+.braveheart-lower-arm-left {
+  top: 140px;
+  left:-20px;
+  transform: rotate(-10deg) translate(0, -20px);
+}
+
+.braveheart-sheild {
+  position: absolute;
+  top: 170px;
+  left: -100px;
+  height: 180px;
+  width: 180px;
+  border: medium solid var(--face-paint-blue);
+  border-radius: 50% 50% 50% 50% / 12% 12% 88% 88%;
+  z-index: 50;
+  
+  background-image: linear-gradient(
+      to bottom left,
+      transparent 45%,
+      var(--white) 45%,
+      var(--white) 55%,
+      transparent 55%
+    ),
+    linear-gradient(
+      to bottom right,
+      transparent 45%,
+      var(--white) 45%,
+      var(--white) 55%,
+      transparent 55%
+    ),
+    linear-gradient(
+      90deg,
+      #1ea3ff 50%,
+      var(--face-paint-blue) 100%
+    );
+}
+
+div[class*="braveheart-sword-"] {
+  background-color: var(--stone1);
+  position: relative;
+}
+
+.braveheart-sword {
+  position: absolute;
+  top: -190px;
+  left: 270px;
+  height: 230px;
+  width: 100px;
+}
+
+.braveheart-sword-handle {
+  height: 20px;
+  width: 100%;
+  top: 210px;
+}
+
+.braveheart-sword-blade {
+  height: 200px;
+  width: 20px;
+  left: 40px;
+}
+
+.braveheart-blade-point {
+  position: relative;
+  top: -220px;
+  left: 40px;
+  width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid var(--stone1);
+}
+
+.bubble {
+  width: 85px;
+  height: 60px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.braveheart-speech {
+  left: var(--braveheart-speech-left);
+  top: 100px;
+}

@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+}
+
+.whole-scene {
+  top: 0;
+  position: absolute;
+  animation: whole-scene-move 10s;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+}
+
+.john-o-groats {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 500px;  
+  left: var(--jog-left);
+  top: 250px;
+}
+
+.jog-1-row, .jog-2-row, .jog-0-row {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.jog-white, .jog-blue, .jog-green, .jog-brown, .jog-yellow, .jog-red, .jog-grey {
+  width: 50px;
+}
+
+.jog-0-row div, .jog-1-row div, .jog-2-row div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jog-white { background-color: var(--white); }
+.jog-blue { background-color: var(--mid-blue); }
+.jog-green { background-color: var(--green5); }
+.jog-brown { background-color: var(--brown); }
+.jog-yellow { background-color: var(--yellow); }
+.jog-red { background-color: var(--red); }
+.jog-grey { background-color: var(--mid-grey); }
+
+.jog-window {
+  width: 15px;
+  height: 15px;
+  background-color: var(--white);
+  border: medium solid var(--black);
+}
+
+div[class*="jog-triangle-"]{
+  width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+}
+
+.jog-triangle-blue { border-bottom: 50px solid var(--mid-blue); }
+.jog-triangle-green { border-bottom: 50px solid var(--green5); }
+.jog-triangle-brown { border-bottom: 50px solid var(--brown); }
+.jog-triangle-yellow { border-bottom: 50px solid var(--yellow); }
+.jog-triangle-red { border-bottom: 50px solid var(--red); }
+.jog-triangle-grey { border-bottom: 50px solid var(--mid-grey); }
+
+.jog-side-grey {
+	width: 50px;
+	height: 50px;
+	transform: skew(20deg) translate(-10px);
+	background: var(--mid-grey);
+}
+
+.jog-inner-triangle {
+  height: 100%;
+  position: relative;
+}
+
+.jog-small-triangle {
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+  border-bottom: 20px solid var(--white);
+  bottom: 0;
+}
+
+.final-sign-post {
+  position: absolute;
+  left: var(--jog-signpost-left);
+  top: 100px;
+  font-family: var(--fsp-font);
+}
+
+.final-sign-post-circle {
+  border-radius: 60px;
+  border: medium solid var(--black);
+  background-color: var(--white);
+  width: 100px;  
+  height: 100px;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.final-sign-post-pole {
+  position: absolute;
+  border: medium solid var(--black);
+  width: 10px;
+  height: 200px;
+  background-color: var(--white);
+  left: 45px; /* half width of circle - 5*/
+}
+
+.final-sign-post-right {
+  position: absolute;
+  background-color: var(--white);
+  border-top: medium solid var(--black);
+  border-bottom: medium solid var(--black);
+  width: 120px;
+  left: 55px;
+  top: 120px;
+  padding-left: 5px;
+}
+
+.final-sign-post-left {
+  position: absolute;
+  background-color: var(--white);
+  border-top: medium solid var(--black);
+  border-bottom: medium solid var(--black);
+  width: 200px;
+  left: -155px;
+  top: 150px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.final-sign-post-triangle-left {
+  position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 14px solid transparent;
+	border-right: 28px solid var(--black);
+	border-bottom: 14px solid transparent;
+  left: -182px;
+  top: 149px;
+}
+
+.final-sp-inner-triangle-left {
+  position: relative;
+  top: -11px;
+  left: 7px;
+  width: 0;
+  height: 0;
+  border-top: 11.5px solid transparent;
+  border-right: 21px solid var(--white);
+  border-bottom: 11.5px solid transparent; 
+}
+
+.final-sign-post-triangle-right {
+  position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 14px solid transparent;
+	border-left: 28px solid var(--black);
+	border-bottom: 14px solid transparent;
+  left: 172px;
+  top: 119px;
+}
+
+.final-sp-inner-triangle-right {
+  position: relative;
+    top: -11px;
+    left: -29px;
+    width: 0;
+    height: 0;
+    border-top: 11.5px solid transparent;
+    border-left: 21px solid var(--white);
+    border-bottom: 11.5px solid transparent; 
+}
+
+
+
+/* bus stop */
+.busstop-top {
+  border-top: 10px solid grey;
+  border-right: 5px solid grey;
+  border-left: 5px solid grey;
+  position: absolute;
+  left: var(--bus-stop-left);
+  height: 70px;
+  width: 150px;
+  top: 330px;
+}
+
+.busstop-pole {
+  position: absolute;
+  border-right: medium solid grey;
+  width: 10px;
+  height: 80px;
+  left: var(--bus-stop-pole-left);
+  top: 320px;
+}
+
+.busstop-sign {
+  position: absolute;
+  border: thin solid grey;
+  background-color: white;
+  width: 15px;
+  height: 20px;
+  left: var(--bus-stop-sign-left);
+  top: 320px;
+}
+
+.bustop-seat {
+  border-bottom: medium solid grey;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+}
+
+
+/* sign post */
+
+.inverness-signpost-outer {
+  left: var(--inverness-signpost-left);
+  top: 300px;
+}
+
+.inverness-signpost-top {
+  right: 70px;
+  padding-left: 2px;
+}
+
+.inverness-triangle-right {
+  right: 40px;
+  top: 0;
+}
+
+.inverness-signpost-bottom {
+  height: 70px;
+}
+

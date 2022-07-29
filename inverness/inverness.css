@@ -1,0 +1,306 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+  --bridge-outer-width: 400px;
+  --bridge-outer-height: 100px;
+  --bridge-central-width: calc(var(--bridge-outer-width) / 2);
+  --bridge-bottom-height: calc(var(--bridge-outer-height) / 4);
+  --bridge-central-left: calc(var(--bridge-central-width) / 2 );
+  --kessock-large-cable-height: 63px;
+  --kessock-large-cable-width: 40px;
+  --kessock-large-cable-top: 14px;
+  --kessock-medium-cable-height: 50px;
+  --kessock-medium-cable-width: 80px;
+  --kessock-medium-cable-top: 28px;
+  --kessock-small-cable-height: 35px;
+  --kessock-small-cable-width:120px;
+  --kessock-small-cable-top: 43px;
+  --nessie-outer-height: 150px;
+  --lochness-height: 50px;
+  --inverness-city-outer-height: 250px;
+}
+
+.inverness-city-outer {
+  position: absolute;
+  top: calc(var(--landscape-top-height) - var(--inverness-city-outer-height));
+  height: var(--inverness-city-outer-height);
+  width: 300px;
+  left: var(--inverness-left); 
+}
+
+.inverness-tower-1, .inverness-tower-1-top,
+.inverness-tower-1-bottom, .inverness-tower-2,
+.inverness-tower-2-top, .inverness-tower-2-bottom {
+  position: absolute;
+}
+
+.inverness-tower-1 {  
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 200px;
+}
+
+.inverness-tower-1-top, .inverness-tower-2-top {
+  width: 0;
+	height: 0;
+}
+
+.inverness-tower-1-top {  
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid var(--stone2);
+  top: 30px;
+}
+
+.inverness-tower-1-bottom, .inverness-tower-2-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; 
+  background-color: var(--stone1);
+}
+
+.inverness-tower-1-bottom { 
+  width: 50px;
+  height: 120px;
+  top: 80px;  
+}
+
+div[class*="-bottom-window"] {
+  background-color: var(--white);
+  border: medium solid black;
+  width: 10px;
+}
+
+.inverness-tower-1-bottom-window { height: 10px; }
+.inverness-tower-2-bottom-window { height: 20px; }
+
+div[class*="inverness-building-"] {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
+.inverness-building-1 {  
+  left: 50px;
+  width: 100px;
+  bottom: 0;
+  height: 50px;
+  background-color: var(--stone4);
+}
+
+.inverness-building-2 {
+  left: 150px;
+  bottom: 0;
+  width: 80px;
+  height: 60px;
+  background-color: var(--stone3);  
+  flex-direction: column;
+}
+
+.inverness-tower-2 {
+  left: 230px;
+  bottom: 0;
+  width: 70px;
+  height: 250px;
+}
+
+.inverness-tower-2-top {
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 100px solid var(--stone2);
+  top: 0px;
+}
+
+.inverness-tower-2-bottom {
+  width: 70px;
+  height: 150px;
+  top: 100px;
+}
+
+.kessock-bridge-outer {
+  position: absolute;
+  width: var(--bridge-outer-width);
+  height: var(--bridge-outer-height);
+  top: calc(var(--landscape-top-height) - var(--bridge-outer-height));
+  z-index: 1;
+  left: var(--kessock-left);
+}
+
+.kessock-bridge-central {
+  position: absolute;
+  width: var(--bridge-central-width);
+  left: var(--bridge-central-left);
+  height: var(--bridge-outer-height);
+  border-right: medium solid var(--mid-grey);
+  border-left: medium solid var(--mid-grey);
+}
+
+.kessock-bridge-bottom {
+  position: absolute;
+  border-top: thick solid var(--mid-grey);
+  width: var(--bridge-outer-width);
+  height: var(--bridge-bottom-height);
+  top: calc((var(--bridge-outer-height) / 4) * 3);
+}
+
+div[class*="kessock-bridge-top-"] {
+  position: absolute;
+  border-left: thin solid grey;
+  height: 126px;
+  width: 200px;
+}
+
+.kessock-bridge-top-triangle-1-1 {
+  transform: translate(10px, 54px) rotate(52deg);
+}
+
+/* first slope of 2nd triangle */
+.kessock-bridge-top-triangle-1-2 {
+  transform: translate(210px, 54px) rotate(52deg);
+}
+
+.kessock-bridge-top-triangle-2-1 {
+  transform: translate(-12px, 54px) rotate(128deg);
+}
+
+.kessock-bridge-top-triangle-2-2 {
+  transform: translate(190px, 54px) rotate(128deg);
+}
+
+div[class*="kessock-cable-"] {
+  position: absolute;
+  border-right: thin solid grey;
+  border-left: thin solid grey;
+}
+
+div[class*="kessock-cable-large-"] {
+  width: var(--kessock-large-cable-width);
+  height: var(--kessock-large-cable-height);
+  top: var(--kessock-large-cable-top);
+}
+
+div[class*="kessock-cable-medium-"] {
+  width: var(--kessock-medium-cable-width);
+  height: var(--kessock-medium-cable-height);
+  top: var(--kessock-medium-cable-top);
+}
+
+div[class*="kessock-cable-small-"] {
+  width: var(--kessock-small-cable-width);
+  height: var(--kessock-small-cable-height);
+  top: var(--kessock-small-cable-top);
+}
+
+.kessock-cable-large-1 { left: 80px; }
+.kessock-cable-medium-1 { left: 60px; }
+.kessock-cable-small-1 { left: 40px; }
+.kessock-cable-large-2 { left: 280px; }
+.kessock-cable-medium-2 { left: 260px; }
+.kessock-cable-small-2 { left: 240px; }
+
+/* nessie */
+
+@keyframes nessie-rise  {
+  100% {
+     transform: translate(0, calc(var(--nessie-outer-height) - calc(var(--nessie-outer-height) * 2)));
+  }
+}
+
+.nessie-outer {
+  position: relative;
+  top: var(--landscape-top-height);
+  z-index: -1;
+  animation: nessie-rise var(--nessie-rise-duration);
+  animation-fill-mode: forwards;
+  animation-delay: var(--nessie-rise-delay);
+  left: var(--nessie-left);
+}
+
+div[class*="nessie-body-"] {
+  position: absolute;
+  background-color: var(--green3);
+}
+
+.nessie-body-head {  
+  border-radius: 30px;
+  width: 25px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.nessie-body-neck {
+  width: 10px;
+  height: 140px;
+  top: 10px;
+  left: 15px;
+}
+
+.nessie-body-bump-1 {
+  width: 70px;
+  height: 40px;
+  top: 110px;
+  left: 45px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.nessie-bump-1-inside {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  top: 10px;
+  left: 10px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: var(--blue);
+}
+
+.nessie-body-bump-2 {
+  width: 60px;
+  height: 30px;
+  top: 120px;
+  left: 145px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.nessie-bump-2-inside {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  top: 10px;
+  left: 10px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: var(--blue);
+}
+
+.nessie-body-tail {
+  width: 60px;
+  height: 30px;
+  top: 120px;
+  left: 230px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.nessie-bump-tail-inside {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 0px;
+  left: 10px;
+  border-top-left-radius: 30px;
+  background-color: var(--blue);
+}
