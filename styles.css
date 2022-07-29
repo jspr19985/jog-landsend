@@ -1,0 +1,196 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* @keyframes drive { from{ left: 20px; } }
+@keyframes walk { 0% {left: 945px;} 100% {left: 895px;} } 
+@keyframes whole-scene-move { 100% { transform: translate(-4000px); } }
+@keyframes drive-off { 100% { transform: translate(150px); } } */
+
+
+:root {
+/*   animation timings -------------*/
+  --whole-scene-move-sec: 60s;
+  --nessie-rise-delay: 13s;
+  --nessie-rise-duration: 2s;
+  
+/*   colors -------------*/
+  --brown: #bf8040;
+  --blue: #00ffff;
+  --mid-blue: #0066ff;
+  --red: red;
+  --orange-red: #e63900;
+  --gold: goldenrod;
+  --yellow: yellow;
+  --green1: #009933;
+  --green2: #00b33c;
+  --green3: #00802b;
+  --green4: #006622;
+  --green5: #00cc66;
+  --white: white;
+  --black: black;
+  --mid-grey: #666699;
+  --stone1: #9494b8;
+  --stone2: #5c5c8a;
+  --stone3: #b3b3cc;
+  --stone4: #c2c2d6;
+  --khaki: #666633;--brown6: #E1B49D;
+  --brown5: #C8906F;
+  --brown3: #B67E5D;
+  --brown4: #B67E5B;   
+  --brown2: #AB7656;   
+  --brown7: #98644C;
+  --brown13: rgb(127, 85, 72);  
+  --brown8: #7A564A;
+  --brown9: #7A564B;
+  --brown10: #3E2B25;
+  --brown11: #3E2925;
+  --brown12: #3D2C25;
+  --dark-brown: #4d2600;
+  --pink: pink;
+  --grey-black: #3d3d5c;
+  --dark-tartan: rgba(85,107,47, 1);
+  --light-tartan: rgba(189,183,107, 1);
+  --medium1-tartan: rgba(128,128,0, 0.5);
+  --medium2-tartan: rgba(160,82,45, 1);
+  --flesh: Tan;
+  --face-paint-blue: DodgerBlue;
+  --silver: Silver;
+  --lightslategrey: 	lightslategrey;
+  --light-grey: gainsboro;
+  --regular-grey: grey;
+  --sea-green: mediumaquamarine;
+  --teal: teal;
+  
+/*   fonts ---------------*/
+  --fsp-font: 'Dosis', sans-serif;
+  --ben-nevis-font: 'Cinzel', serif;
+  --royal-font: 'Ballet', cursive;
+  --signpost-font: 'Brush Script MT', cursive; 
+  --speech-bubble-font: 'Comic Neue', cursive;
+  
+ /* page dimensions ------*/
+  --landscape-top-height: 400px;
+  --landscape-bottom-height: 500px;
+  --landscape-width: 1350px;
+  --scottish-village-height: 150px;
+  --braveheart-height: 500px;
+  
+  /* left values ------*/
+  --jog-left: 50px;
+  --jog-signpost-left: 600px;
+  --bus-stop-left: 1000px;
+  --bus-stop-pole-left: 980px;
+  --bus-stop-sign-left: 972px;
+  --inverness-signpost-left: 1250px;
+  --inverness-left: 1350px;
+  --kessock-left: 1600px;
+  --nessie-left: 1800px;
+  --ben-nevis-left: 2130px;
+  --balmoral-left: 3250px;
+  --deer-left: 3600px;
+  --generic-signpost-left: 4100px;
+  --scottish-village-left: 4200px;
+  --balmoral-signpost-left: 100px;
+  --braveheart-left: 4800px;
+  --braveheart-speech-left: 4900px;
+}
+
+.whole-scene {
+  top: 0;
+  position: absolute;
+  animation: whole-scene-move var(--whole-scene-move-sec);
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+  opacity: 0.99;
+  will-change: transform;
+}
+
+.landscape-top {
+  background-color: var(--blue);
+  width: var(--landscape-width);
+  width: 100%;
+  height: var(--landscape-top-height);
+}
+
+.landscape-bottom {
+  position: absolute;
+  border-top: thin solid black;
+  background-color: var(--brown);
+  width: var(--landscape-width);
+  width: 100%;
+  height: var(--landscape-bottom-height);
+  z-index: 2;
+}
+
+.signpost-outer {
+  position: absolute;
+}
+
+.signpost {
+  position: relative;  
+  background-color: var(--white);
+  font-family: var(--signpost-font);
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.signpost-top {
+  border-top: thin solid var(--black);
+  border-bottom: thin solid var(--black);
+  border-left: thin solid var(--black);
+}
+
+.sp-triangle-right {
+  position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-left: 30px solid var(--black);
+	border-bottom: 16px solid transparent;
+}
+
+.sp-inner-triangle {
+    position: relative;
+    top: -14px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-top: 14.5px solid transparent;
+    border-left: 28px solid var(--white);
+    border-bottom: 14.5px solid transparent;    
+}
+
+.signpost-bottom {
+  position: relative;  
+  border: thin solid var(--black);
+  width: 10px;
+  right: 30px;
+  background-color: var(--white);
+}
+
+.bubble {
+  position: relative;
+  background: var(--white);
+  border-radius: 100%;
+  font-family: var(--speech-bubble-font);
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--white);
+  border-bottom: 0;
+  margin-left: -13px;
+  margin-bottom: -9px;
+}

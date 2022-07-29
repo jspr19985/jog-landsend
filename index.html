@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>John O' Groats to Land's End</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Cinzel&family=Dosis:wght@500&family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="/bus/bus.css"/>
+  <link rel="stylesheet" href="/johnOGroats/johnOGroats.css"/>  
+  <link rel="stylesheet" href="/inverness/inverness.css"/>
+  <link rel="stylesheet" href="/benNevis/benNevis.css"/>
+  <link rel="stylesheet" href="/balmoral/balmoral.css"/>
+  <link rel="stylesheet" href="/scottishVillage/scottishVillage.css"/>
+</head>
+
+<body class="whole-page">
+  <div class="landscape-top"></div>
+  <div class="whole-scene" id="whole-scene">
+  </div> 
+  <div class="landscape-bottom"></div>
+  <script>     
+    var wholeScene = document.getElementById("whole-scene");
+    
+    fetch("./bus/bus.html").then(value => value.text())
+      .then(data => {
+      wholeScene.insertAdjacentHTML("afterend", data);
+    });     
+      
+    Promise.all([
+      fetch("./johnOGroats/johnOGroats.html").then(value => value.text()),
+      fetch("./inverness/inverness.html").then(value => value.text()),
+      fetch("./benNevis/benNevis.html").then(value => value.text()),
+      fetch("./balmoral/balmoral.html").then(value => value.text()),
+      fetch("./scottishVillage/scottishVillage.html").then(value => value.text())
+    ]).then(([johnOGroats , inverness, benNevis, balmoral, scottishVillage
+             ]) => { 
+      return [
+        johnOGroats, inverness, benNevis ,balmoral, scottishVillage
+      ]
+    })
+      .then(items => {
+      items.forEach(item => {
+        wholeScene.insertAdjacentHTML("beforeend", item);
+      });
+    })
+      .catch((err) => {
+      console.log(err);
+    });
+  </script>
+</body>
+
+</html>

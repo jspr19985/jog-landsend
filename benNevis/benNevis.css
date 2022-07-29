@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+  --ben-nevis-height: 250px;
+}
+
+.ben-nevis-outer {
+  position: absolute;
+  top: calc(var(--landscape-top-height) - var(--ben-nevis-height));
+  height: 250px;
+  left: var(--ben-nevis-left);
+  width: 800px; 
+}
+
+.ben-nevis-inner1 {
+  position: relative;
+  height: 250px;
+  width: 500px;
+  background-image: linear-gradient(
+      50deg,
+      var(--stone1) 50%,
+      var(--grey-black) 100%
+    );
+  border-radius: 16% 80% 10% 10% / 32% 93% 1% 1%;
+  left: 300px;
+  top: -150px;
+}
+
+.ben-nevis-inner2 {
+  position: relative;
+  height: 150px;
+  width: 400px;
+  background-image: linear-gradient(
+      50deg,
+      var(--green5) 50%,
+      var(--green3) 100%
+    );
+  border-radius: 73% 36% 10% 10% / 100% 93% 1% 1% ;
+  top: 100px;
+  z-index: 3;
+  border: thin solid var(--green4);
+}
+
+.ben-nevis-inner3 {
+  position: absolute;
+  height: 180px;
+  width: 600px;
+  background-image: linear-gradient(
+      90deg,
+      var(--green5) 50%,
+      var(--green4) 100%
+    );
+  border-radius: 74% 66% 10% 10% / 98% 100% 1% 0%;
+  top: 70px;
+  left: 200px;
+  z-index: 2;
+}
+
+.ben-nevis-text {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  z-index: 6;
+  font-family: var(--ben-nevis-font);
+  color: var(--white);
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Signpost */
+.scenic-signpost-outer {
+  top: 100px;
+  left: 900px;
+}
+
+.scenic-signpost-top {
+  right: 50px;
+  padding-left: 5px;
+  width: 130px;
+}
+
+.scenic-sp-triangle-right {
+  right: 20px;
+  top: 0;
+}
+
+.scenic-signpost-bottom {
+  height: 120px;
+}
