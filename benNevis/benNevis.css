@@ -76,6 +76,43 @@ html {
   font-size: 24px;
 }
 
+.person-bn {
+  position: absolute;
+  z-index: 10;
+}
+
+.person-bn1 { left: 345px; top: -90px; }
+.person-bn2 { left: 55px; top: 57px; animation: climb-bn 15s infinite; }
+.person-bn3 { left: 25px; top: 75px; animation: climb-bn 15s infinite; }
+
+@keyframes wave2 { 
+  0% {transform: rotate(40deg)}  
+  50% {transform: rotate(60deg)} 
+  100% {transform: rotate(40deg)}  
+}
+
+.arm-bn {
+  transform: rotate(-40deg);
+}
+
+.wave {
+  animation: wave 1s infinite;
+}
+
+.arm2 {
+  transform: rotate(40deg);
+ }
+
+ .wave2 {
+  animation: wave2 1s infinite;
+ }
+
+@keyframes climb-bn {
+  0% {transform: translateX(0px) translateY(0px)}  
+  50% {transform: translateX(200px) translateY(-60px)} 
+  100% {transform: translateX(0px) translateY(0px)}
+}
+
 /* Signpost */
 .scenic-signpost-outer {
   top: 100px;
