@@ -355,18 +355,6 @@ div[class*="steeple-cross-sq"] {
 .steeple-cross-sq-bl, .steeple-cross-sq-tl { border-right: thin solid black; }
 .steeple-cross-sq-br, .steeple-cross-sq-tr { border-left: thin solid black; }
 
-/* deer */
-
-/* .deer-container {
-    height: 530px;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    bottom: -100px;
-    transform: scale(0.1); 
-    border: thick solid red;
-} */
-
 #deer-wrapper {
     height: 510px;
     width: 763px;
@@ -838,12 +826,16 @@ div[class*="steeple-cross-sq"] {
     left: 179px;
     transform: rotate(-38deg);
     z-index: 10;
-    animation: move-neck 3s forwards;
+    animation: move-neck 15s infinite;
 }
 
 @keyframes move-neck {
   0% {transform: rotate(-38deg); top: 245px; left: 179px;}
-  100% {transform: rotate(38deg); top: 199px; left: 189px;}   
+  20% {transform: rotate(38deg); top: 199px; left: 189px;} /*top*/
+  40% {transform: rotate(38deg); top: 199px; left: 189px;} /*top (pause)*/
+  80% {transform: rotate(-38deg); top: 245px; left: 179px;} /*bottom*/
+  90% {transform: rotate(-38deg); top: 245px; left: 179px;} /*bottom (pause)*/
+  100% {transform: rotate(-38deg); top: 245px; left: 179px;}   
 }
 
 #deer .neck-hair {
@@ -857,13 +849,16 @@ div[class*="steeple-cross-sq"] {
     transform: rotate(-20deg);
     transform-origin: left;
     z-index: -100;
-    animation: move-neck-hair 3s;
-    animation-fill-mode: forwards;
+    animation: move-neck-hair 15s infinite;
 }
 
 @keyframes move-neck-hair {
   0% {transform: rotate(-20deg); top: 276px;} 
-  100% {transform: rotate(56deg); top: 156px;}   
+  20% {transform: rotate(56deg); top: 156px} /*top*/
+  40% {transform: rotate(56deg); top: 156px} /*top (pause)*/
+  80% {transform: rotate(-20deg); top: 276px;} /*bottom*/
+  90% {transform: rotate(-20deg); top: 276px;} /*bottom (pause)*/
+  100% {transform: rotate(-20deg); top: 276px;}   
 }
 
 #deer .neck-hair .hair {
@@ -939,13 +934,16 @@ span.ears:before {
     z-index: -100;
     transform: rotateY(180deg) rotateZ(0deg);
     border-radius: 66% 16px 0 0 / 40% 22px 0 0;
-    animation: rotate-head 3s;
-    animation-fill-mode: forwards;
+    animation: rotate-head 15s infinite;
 }
 
 @keyframes rotate-head {
   0% {transform: rotateY(180deg) rotateZ(100deg); top: 268px; left: 140px;} 
-  100% {transform: rotateY(180deg) rotateZ(0deg);}    
+  20% {transform: rotateY(180deg) rotateZ(0deg); top: 128px; left: 200px;}  /*top*/
+  40% {transform: rotateY(180deg) rotateZ(0deg); top: 128px; left: 200px;} /*top (pause)*/
+  80% {transform: rotateY(180deg) rotateZ(100deg); top: 268px; left: 140px;}  /*bottom*/
+  90% {transform: rotateY(180deg) rotateZ(100deg); top: 268px; left: 140px;}  /*bottom (pause)*/
+  100% {transform: rotateY(180deg) rotateZ(100deg); top: 268px; left: 140px;}    
 }
 
 #deer .head .face {
@@ -1027,13 +1025,16 @@ span.ears:before {
     height: 20px;
     transform: rotate(-61deg);
     z-index: -100;
-    animation: rotate-horns 3s;
-    animation-fill-mode: forwards;
+    animation: rotate-horns 15s infinite;
 }
 
 @keyframes rotate-horns {
   0% {transform: rotate(-61deg); top: 301px; left: 109px;}
-  100% {transform: rotate(33deg); top: 121px; left: 239px;}  
+  20% {transform: rotate(33deg); top: 121px; left: 239px;} /*top*/
+  40% {transform: rotate(33deg); top: 121px; left: 239px;} /*top (pause)*/
+  80% {transform: rotate(-61deg); top: 301px; left: 109px;} /*bottom*/
+  90% {transform: rotate(-61deg); top: 301px; left: 109px;} /*bottom (pause)*/
+  100% {transform: rotate(-61deg); top: 301px; left: 109px;}  
 }
 
 #deer .horns .horn-1 {
