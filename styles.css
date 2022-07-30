@@ -7,10 +7,10 @@ html {
     box-sizing: inherit;
 }
 
-/* @keyframes drive { from{ left: 20px; } }
+@keyframes drive { from{ left: 20px; } }
 @keyframes walk { 0% {left: 945px;} 100% {left: 895px;} } 
 @keyframes whole-scene-move { 100% { transform: translate(-4000px); } }
-@keyframes drive-off { 100% { transform: translate(150px); } } */
+@keyframes drive-off { 100% { transform: translate(150px); } }
 
 
 :root {
@@ -95,10 +95,10 @@ html {
   --balmoral-left: 3250px;
   --deer-left: 3600px;
   --generic-signpost-left: 4100px;
-  --scottish-village-left: 4200px;
+  --scottish-village-left: 4030px;
   --balmoral-signpost-left: 100px;
-  --braveheart-left: 4800px;
-  --braveheart-speech-left: 4900px;
+  --braveheart-left: 4500px;
+  --braveheart-speech-left: 4600px;
 }
 
 .whole-scene {

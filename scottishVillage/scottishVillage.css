@@ -21,14 +21,15 @@
 
 /* Village */
 
-.scottish-village-outer{
+.scottish-village-outer {
   position: absolute;
-  top: calc(var(--landscape-top-height) - var(--scottish-village-height));
+  top: calc(var(--landscape-top-height) - var(--scottish-village-height) + 20px);
   height: var(--scottish-village-height);
   left: var(--scottish-village-left);
   width: 600px;
   display: flex;
   flex-direction: column;
+  transform: scale(0.75);
 }
 
 .scottish-chimneys {
