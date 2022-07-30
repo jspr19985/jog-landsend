@@ -194,3 +194,12 @@ html {
   margin-left: -13px;
   margin-bottom: -9px;
 }
+
+ .arm {
+  position: absolute;
+  height: 15px;
+  width: 10px;
+  top: 70px;
+  border-right: medium solid black;
+  transform-origin: bottom right;
+}
