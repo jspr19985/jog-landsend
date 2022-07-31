@@ -398,6 +398,7 @@ div[class*="braveheart-lower-arm-"] {
 .braveheart-lower-arm-right {
   top: 35px;
   left:320px;
+  animation: rotate-blade 2s linear infinite;
 }
 
 .braveheart-lower-arm-left {
@@ -442,12 +443,20 @@ div[class*="braveheart-sword-"] {
   position: relative;
 }
 
+@keyframes rotate-blade {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(0deg); }
+}
+
 .braveheart-sword {
   position: absolute;
   top: -190px;
   left: 270px;
   height: 230px;
   width: 100px;
+  transform-origin: bottom;
+  animation: rotate-blade 2s linear infinite;
 }
 
 .braveheart-sword-handle {
