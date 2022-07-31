@@ -91,6 +91,7 @@ div[class*="jog-triangle-"]{
   left: var(--jog-signpost-left);
   top: 100px;
   font-family: var(--fsp-font);
+  text-transform: uppercase;
 }
 
 .final-sign-post-circle {
