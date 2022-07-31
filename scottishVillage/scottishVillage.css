@@ -483,4 +483,13 @@ div[class*="braveheart-sword-"] {
 .braveheart-speech {
   left: var(--braveheart-speech-left);
   top: 100px;
+  animation: braveheart-speech-flicker 2s infinite ease-out;
+}
+
+@keyframes braveheart-speech-flicker { 
+  0% {opacity: 0} 
+  25% {opacity: 0}
+  50% {opacity: 1} 
+  75% {opacity: 0}
+  100% {opacity: 0}  
 }
