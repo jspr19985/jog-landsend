@@ -232,10 +232,19 @@ div[class*="jog-triangle-"]{
 .inverness-signpost-top {
   right: 70px;
   padding-left: 2px;
+  width: 112px;
+}
+
+.inverness-sign-arrow-top { 
+  transform: skew(30deg) translate(37px); 
+}
+
+.inverness-sign-arrow-bottom { 
+  transform: skew(-30deg) translate(37px); 
 }
 
 .inverness-triangle-right {
-  right: 40px;
+  right: 55px;
   top: 0;
 }
 

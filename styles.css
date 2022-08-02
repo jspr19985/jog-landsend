@@ -71,7 +71,7 @@ html {
   --fsp-font: 'Dosis', sans-serif;
   --ben-nevis-font: 'Cinzel', serif;
   --royal-font: 'Ballet', cursive;
-  --signpost-font: 'Brush Script MT', cursive; 
+  --signpost-font: 'Roboto', sans-serif; 
   --speech-bubble-font: 'Comic Neue', cursive;
   
  /* page dimensions ------*/
@@ -135,35 +135,56 @@ html {
 .signpost {
   position: relative;  
   background-color: var(--white);
+  letter-spacing: 1px;
   font-family: var(--signpost-font);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: lighter;
 }
 
 .signpost-top {
-  border-top: thin solid var(--black);
-  border-bottom: thin solid var(--black);
-  border-left: thin solid var(--black);
+  border-top: medium solid var(--black);
+  border-bottom: medium solid var(--black);
+  border-left: medium solid var(--black);
+  padding: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.sign-arrow-top, .sign-arrow-bottom {
+  background-color: var(--black);
+  height: 13px;
+  width: 7px;
+  z-index: 1;
+}
+
+.sign-arrow-top { 
+  position: absolute;
+  top: 7px;
+}
+
+.sign-arrow-bottom { 
+  position: absolute;
+  top: 20px;
 }
 
 .sp-triangle-right {
   position: absolute;
 	width: 0;
 	height: 0;
-	border-top: 15px solid transparent;
-	border-left: 30px solid var(--black);
-	border-bottom: 16px solid transparent;
+	border-top: 20px solid transparent;
+	border-left: 15px solid var(--black);
+	border-bottom: 20px solid transparent;
 }
 
 .sp-inner-triangle {
-    position: relative;
-    top: -14px;
-    left: -30px;
-    width: 0;
-    height: 0;
-    border-top: 14.5px solid transparent;
-    border-left: 28px solid var(--white);
-    border-bottom: 14.5px solid transparent;    
+  position: relative;
+  top: -17px;
+  left: -16px;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-left: 14px solid var(--white);
+  border-bottom: 17px solid transparent;    
 }
 
 .signpost-bottom {
@@ -171,7 +192,7 @@ html {
   border: thin solid var(--black);
   width: 10px;
   right: 30px;
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 .bubble {
