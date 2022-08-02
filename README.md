@@ -1,7 +1,7 @@
 # jog-landsend
 ### CSS animation of a journey from John O' Groats to Land's End.
 
-<img width="1352" alt="jog-landsend" src="https://user-images.githubusercontent.com/17809022/181813804-83fdcdad-11a2-4c27-86ac-d9b4804253df.png">
+<img width="1656" alt="Screenshot 2022-08-02 at 21 30 19" src="https://user-images.githubusercontent.com/17809022/182467738-78c75d63-3b5b-48a7-9387-67282857d43e.png">
 
 ## Run
 
