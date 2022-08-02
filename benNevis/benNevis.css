@@ -122,12 +122,32 @@ html {
 .scenic-signpost-top {
   right: 50px;
   padding-left: 5px;
-  width: 130px;
+  width: 150px;
+  background-color: var(--brown2) !important;
+  color: var(--white);
+  border-top: medium solid var(--white) !important;
+  border-bottom: medium solid var(--white) !important;
+  border-left: medium solid var(--white) !important;
+}
+
+.scenic-sign-arrow-top { 
+  transform: skew(30deg) translate(92px); 
+  background-color: var(--white) !important;
+}
+
+.scenic-sign-arrow-bottom { 
+  transform: skew(-30deg) translate(92px); 
+  background-color: var(--white) !important;
 }
 
 .scenic-sp-triangle-right {
-  right: 20px;
+  right: 36px;
   top: 0;
+  border-left: 15px solid var(--white) !important;
+}
+
+.scenic-sp-inner-triangle {
+  border-left: 14px solid var(--brown2) !important;   
 }
 
 .scenic-signpost-bottom {

@@ -7,12 +7,20 @@
 .sv-signpost-top {
   right: 50px;
   padding-left: 5px;
-  width: 400px;
+  width: 500px;
 }
 
 .sv-sp-triangle-right {
-  right: 20px;
+  right: 36px;
   top: 0;
+}
+
+.sv-sign-arrow-top { 
+  transform: skew(30deg) translate(442px); 
+}
+
+.sv-sign-arrow-bottom { 
+  transform: skew(-30deg) translate(442px); 
 }
 
 .sv-signpost-bottom {
