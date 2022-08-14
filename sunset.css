@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+  --moon: #FFD;
+}
+
+@keyframes allTheGradients { 
+  0% {background: linear-gradient(to bottom,hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%),hsl(180, 100%, 50%),hsl(340, 100%, 90%),hsl(30, 100%, 70%));}
+  4% {background: linear-gradient(to bottom,hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%),hsl(340, 100%, 90%),hsl(340, 100%, 90%),hsl(30, 100%, 70%));}
+  8% {background: linear-gradient(to bottom,hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%),hsl(340, 100%, 80%),hsl(340, 100%, 90%),hsl(30, 100%, 60%));}
+  12% {background: linear-gradient(to bottom,hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(340, 100%, 80%),hsl(340, 100%, 90%), hsl(340, 100%, 90%),hsl(30, 100%, 60%));}
+  16% {background: linear-gradient(to bottom,hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(340, 100%, 90%), hsl(340, 100%, 80%),hsl(340, 100%, 90%), hsl(340, 100%, 90%),hsl(20, 100%, 60%));}
+  20% { background: linear-gradient(to bottom,hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(340, 100%, 80%), hsl(340, 100%, 80%),hsl(340, 100%, 90%), hsl(340, 100%, 90%),hsl(20, 100%, 60%));}
+  25% {background: linear-gradient(to bottom,hsl(180, 100%, 50%), hsl(180, 100%, 50%), hsl(340, 100%, 80%), hsl(340, 100%, 80%), hsl(340, 100%, 80%),hsl(350, 100%, 80%), hsl(30, 100%, 90%),hsl(20, 100%, 50%));}
+  28% {background: linear-gradient(to bottom,hsl(180, 100%, 50%),  hsl(180, 100%, 50%), hsl(340, 100%, 80%), hsl(340, 100%, 80%), hsl(20, 100%, 70%), hsl(60, 100%, 90%), hsl(20, 100%, 50%));}
+  32% {background: linear-gradient(to bottom,hsl(180, 100%, 50%),  hsl(180, 100%, 50%), hsl(340, 100%, 80%), hsl(340, 100%, 80%), hsl(20, 100%, 70%), hsl(60, 100%, 90%), hsl(20, 100%, 50%));}
+  36% {background: linear-gradient(to bottom,hsl(190, 100%, 35%),  hsl(190, 100%, 50%), hsl(305, 100%, 80%), hsl(340, 100%, 80%), hsl(20, 100%, 70%), hsl(60, 100%, 90%), hsl(20, 100%, 50%));} 
+  40% {background: linear-gradient(to bottom,hsl(205, 100%, 35%),  hsl(205, 100%, 50%), hsl(305, 100%, 80%), hsl(340, 100%, 80%), hsl(20, 100%, 70%), hsl(60, 100%, 90%), hsl(20, 100%, 50%));}
+  44% {background: linear-gradient(to bottom,hsl(265, 100%, 60%),  hsl(265, 100%, 60%), hsl(305, 100%, 80%), hsl(340, 100%, 80%), hsl(20, 100%, 70%), hsl(60, 100%, 90%), hsl(20, 100%, 50%));} 
+  47% {background: linear-gradient(to bottom,hsl(265, 100%, 50%),  hsl(265, 100%, 50%), hsl(305, 100%, 80%), hsl(340, 100%, 80%), hsl(20, 100%, 70%), hsl(60, 100%, 80%), hsl(20, 100%, 50%));}
+  50% {background: linear-gradient(to bottom,hsl(245, 100%, 30%),  hsl(265, 100%, 50%), hsl(305, 100%, 80%), hsl(340, 100%, 80%), hsl(20, 100%, 70%), hsl(60, 100%, 80%), hsl(20, 100%, 50%));}
+  54% {background: linear-gradient(to bottom,hsl(265, 100%, 20%),  hsl(270, 100%, 50%), hsl(305, 100%, 80%), hsl(340, 100%, 80%), hsl(20, 100%, 70%), hsl(50, 100%, 70%), hsl(20, 100%, 50%));}
+  58% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 75%), hsl(340, 100%, 75%), hsl(20, 100%, 70%), hsl(40, 100%, 70%), hsl(20, 100%, 50%));}
+  60% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 75%), hsl(340, 100%, 75%), hsl(20, 100%, 70%), hsl(30, 100%, 70%), hsl(20, 100%, 50%));}
+  63% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 75%), hsl(340, 100%, 75%), hsl(20, 100%, 70%), hsl(20, 100%, 70%), hsl(20, 100%, 50%));}
+  66% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 75%), hsl(20, 100%, 70%), hsl(20, 100%, 50%) );}
+  69% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 75%), hsl(20, 100%, 70%), hsl(20, 100%, 50%) );}
+  72% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 65%), hsl(270, 100%, 75%), hsl(20, 100%, 70%), hsl(20, 100%, 50%) );}
+  75% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 75%), hsl(20, 100%, 50%) );}
+  78% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 75%),  hsl(270, 100%, 85%) );}
+  81% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 85%));}
+  85% {background: linear-gradient(to bottom, hsl(270, 100%, 20%), hsl(270, 100%, 50%), hsl(270, 100%, 75%));}
+  88% {background: linear-gradient(to bottom, hsl(270,100%,10%), hsl(270,100%,50%), hsl(270,100%,80%));}
+  91% {background: linear-gradient(to bottom, hsl(270,100%,10%), hsl(270,100%,45%), hsl(270,100%,75%));}
+  94% {background: linear-gradient(to bottom, hsl(270,100%,10%), hsl(270,100%,40%), hsl(270,100%,70%));}
+  97% {background: linear-gradient(to bottom, hsl(270,100%,10%), hsl(270,100%,35%), hsl(270,100%,60%));}
+  100% {background: linear-gradient(to bottom, hsl(270,100%,10%), hsl(270,100%,30%), hsl(270,100%,50%) );}
+}
+  
+  #sky {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: allTheGradients 3s forwards linear;
+  }
+
+  #moon {
+    position: relative;
+    left: 1200px;
+    top: 100px;
+    background-color: var(--moon);
+    background-image: linear-gradient(
+    45deg,
+    white 0%,
+    silver 50%,
+    grey 100%
+    );
+    box-shadow: 0 0 30px 0px var(--moon), 0 0 100px 0 white;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+  }
+  
