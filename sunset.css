@@ -123,6 +123,10 @@ html {
     animation: sunsetGradient 10s forwards linear;
   }
 
+  @keyframes moveMoon {
+    100% {transform: translateY(0)}
+  }
+
   #moon {
     position: relative;
     left: 1200px;
@@ -138,5 +142,7 @@ html {
     border-radius: 30px;
     height: 50px;
     width: 50px;
-  }
+    transform: translateY(-200px);
+    animation: moveMoon 3s forwards 9s;
+  }  
   
