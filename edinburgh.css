@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+  --dark-sea-green: DarkSeaGreen;
+  --edinburgh-stone2: #a88d3b;
+  --edinburgh-stone3: #947e3d;
+  --white: white;
+  --black: black;
+  --landscape-top-height: 400px;
+  --edinburgh-clock-height: 300px;
+  --calton-hill-height: 150px;
+  --national-monument-height: 100px;
+  --nelson-monument-height: 200px;
+  --dugald-stewart-height: 150px;
+}
+
+.edinburgh-clock-outer {
+    position: absolute;
+    top: calc(var(--landscape-top-height) - var(--edinburgh-clock-height));
+    height: var(--edinburgh-clock-height);
+    width: 70px;
+    left: 650px;
+  }
+  
+  .edinburgh-clock-top {
+    border: thin solid black;
+    height: 20px;
+    background-color: var(--dark-sea-green);
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+  }
+  
+  .edinburgh-clock-triangle {
+    border: thin solid black;
+    height: 30px;
+    background-color: var(--edinburgh-stone2);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  }
+  .edinburgh-clock-face-outer {
+    border: thin solid black;
+    height: 60px;
+    background-color: var(--edinburgh-stone2);
+  }
+  
+  .edinburgh-clock-face {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    height: 40px;
+    border: thin solid black;
+    width: 40px;
+    background-color: var(--white);
+    border-radius: 50%;
+  }
+  @keyframes move-clock-hand {
+    100% {transform: rotate(360deg);}   
+  }
+  .edinburgh-clock-second-hand {
+    position: relative;
+    height: 15px;
+    width: 1px;
+    left: 18px;
+    top: 5px;
+    border-left: thin solid var(--black);
+    animation: move-clock-hand 60s infinite linear;
+    transform-origin: bottom left;
+  }
+  .edinburgh-clock-minute-hand {
+    position: absolute;
+    height: 16px;
+    width: 10px;
+    left: 17px;
+    top: 5px;
+    border-left: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+  }
+  .edinburgh-clock-face-ridge {
+    border: thin solid black;
+    height: 10px;
+    background-color: var(--edinburgh-stone3);
+  }
+  .edinburgh-clock-base {  
+    border: thin solid black;
+    height: 180px;  
+  }
+  .edinburgh-clock-base-ridge {
+    height: 10px;  
+    display: flex;
+    justify-content: space-between;
+  }
+  .edinburgh-clock-base-ridges {
+    width: 7px;
+    border: thin solid var(--black);
+  }
+  .edinburgh-clock-base-bottom-ridge {
+    margin-top: 10px;
+    height: 150px;  
+    display: flex;
+    justify-content: space-around;
+  }
+  .edinburgh-clock-base-bottom-ridges {
+    width: 10px;
+    border: thin solid var(--black);
+  }
+  
+  .edinburgh-clock-base, .edinburgh-clock-face-outer,
+  .edinburgh-clock-triangle {
+    position: relative;
+    background-color: var(--edinburgh-stone2);
+    left: 5px;
+    width: 60px;
+  }
