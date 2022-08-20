@@ -175,6 +175,7 @@ html {
     position: absolute;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 50%; 
+    transform: scale(0);
   } 
 
   .bright-star-1 {    
@@ -182,7 +183,6 @@ html {
     height: 10px;    
     left: 1000px;
     top: 200px;  
-    transform: scale(0);
     animation: shine 1s infinite 9s;    
   }
 
@@ -191,7 +191,6 @@ html {
     height: 20px;    
     left: 500px;
     top: 100px;  
-    transform: scale(0);
     animation: shine 2.5s infinite 9s;  
   }
 
@@ -200,7 +199,6 @@ html {
     height: 10px;    
     left: 100px;
     top: 100px;  
-    transform: scale(0);
     animation: shine 1.2s infinite 9s;  
   }
 
@@ -209,7 +207,6 @@ html {
     height: 15px;    
     left: 200px;
     top: 300px;  
-    transform: scale(0);
     animation: shine 2s infinite 9s;  
   }
 
@@ -218,7 +215,6 @@ html {
     height: 13px;    
     left: 1200px;
     top: 250px;  
-    transform: scale(0);
     animation: shine 3.5s infinite 9s;  
   }
 
@@ -227,7 +223,6 @@ html {
     height: 17px;    
     left: 700px;
     top: 350px;  
-    transform: scale(0);
     animation: shine 1.3s infinite 9s;  
   }
 
@@ -236,7 +231,6 @@ html {
     height: 11px;    
     left: 800px;
     top: 175px;  
-    transform: scale(0);
     animation: shine 2.9s infinite 9s;  
   }
 
@@ -245,7 +239,6 @@ html {
     height: 12px;    
     left: 650px;
     top: 195px;  
-    transform: scale(0);
     animation: shine 3.6s infinite 9s;  
   }
 
@@ -254,7 +247,6 @@ html {
     height: 16px;    
     left: 250px;
     top: 50px;  
-    transform: scale(0);
     animation: shine 1.3s infinite 9s;  
   }
 
@@ -263,7 +255,6 @@ html {
     height: 20px;    
     left: 550px;
     top: 30px;  
-    transform: scale(0);
     animation: shine 2.2s infinite 9s;  
   }
 
@@ -272,7 +263,6 @@ html {
     height: 12px;    
     left: 70px;
     top: 100px;  
-    transform: scale(0);
     animation: shine 3s infinite 9s;  
   }
 
@@ -281,7 +271,6 @@ html {
     height: 10px;    
     left: 150px;
     top: 150px; 
-    transform: scale(0); 
     animation: shine 1.1s infinite 9s;  
   }
 
@@ -290,7 +279,6 @@ html {
     height: 12px;    
     left: 650px;
     top: 70px;  
-    transform: scale(0);
     animation: shine 2.3s infinite 9s;  
   }
 
@@ -299,7 +287,6 @@ html {
     height: 13px;    
     left: 600px;
     top: 90px;  
-    transform: scale(0);
     animation: shine 3.5s infinite 9s;  
   }
 
@@ -308,7 +295,6 @@ html {
     height: 10px;    
     left: 900px;
     top: 200px;  
-    transform: scale(0);
     animation: shine 1.7s infinite 9s;  
   }
 
@@ -317,7 +303,6 @@ html {
     height: 12px;    
     left: 1400px;
     top: 90px;  
-    transform: scale(0);
     animation: shine 2s infinite 9s;  
   }
 
@@ -326,7 +311,6 @@ html {
     height: 13px;    
     left: 1300px;
     top: 200px;  
-    transform: scale(0);
     animation: shine 3s infinite 9s;  
   }
 
@@ -335,7 +319,6 @@ html {
     height: 14px;    
     left: 1500px;
     top: 300px;  
-    transform: scale(0);
     animation: shine 1s infinite 9s;  
   }
   
@@ -344,7 +327,6 @@ html {
     height: 13px;    
     left: 1100px;
     top: 50px;  
-    transform: scale(0);
     animation: shine 3s infinite 9s;  
   }
 
@@ -353,7 +335,6 @@ html {
     height: 14px;    
     left: 900px;
     top: 100px;  
-    transform: scale(0);
     animation: shine 1.2s infinite 9s;  
   }
   
@@ -362,7 +343,6 @@ html {
     height: 14px;    
     left: 50px;
     top: 300px;  
-    transform: scale(0);
     animation: shine 1.1s infinite 9s;  
   }
   
