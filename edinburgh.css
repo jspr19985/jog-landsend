@@ -164,7 +164,7 @@ div[class*="window-nelson"] {
 .outer-dgs {
   position: relative;
   left: 400px;
-  z-index: 13;
+  z-index: 3;
   width: 72px;
   display: flex;
   align-items: center;
