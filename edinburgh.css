@@ -11,6 +11,7 @@ html {
   /* already have   */
   --white: white;
   --black: black;
+  --regular-grey: grey;
   --green4: #006622;
   --green5: #00cc66;
   /* already have   */
@@ -51,17 +52,75 @@ html {
 }
 
 .national-monument-top, .national-monument-pillars {
-  background-color: var(--edinburgh-stone2);
+  background-color: var(--regular-grey);
+  border: thin solid var(--black);
 }
 
 .national-monument-pillars {
   width: 10px;
   height: 80%;
+  border-top: none;
 }
 
 .national-monument-top {
   height: 20%;
   width: 100%;
+}
+
+.outer-dgs {
+  position: relative;
+  left: 400px;
+  z-index: 1;
+  width: 72px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+div[class*="dgs-"] {
+  border: thin solid var(--black);
+  background-color: var(--regular-grey);
+}
+
+.dgs-top {  
+  height: 10px;
+  width: 7px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.dgs-circle-1 {
+  height: 5px;
+  width: 70px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+.dgs-circle-2 {
+  height: 10px;
+  width: 55px;
+}
+
+.pillars-outer-dgs {
+  height: 100px;
+  width: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dgs-pillar {
+  height: 100%;
+  width: 7px;
+}
+
+.dgs-bottom-1 {
+  height: 5px;
+  width: 55px;
+}
+
+.dgs-bottom-2 {
+  height: 5px;
+  width: 65px;
 }
 
 .edinburgh-clock-outer {
