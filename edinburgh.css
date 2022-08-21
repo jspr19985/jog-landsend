@@ -70,7 +70,7 @@ html {
 .outer-dgs {
   position: relative;
   left: 400px;
-  z-index: 20; /* MAKE THIS SMALLER */
+  z-index: 1;
   width: 72px;
   display: flex;
   align-items: center;
