@@ -8,17 +8,60 @@ html {
 }
 
 :root {
-  --dark-sea-green: DarkSeaGreen;
-  --edinburgh-stone2: #a88d3b;
-  --edinburgh-stone3: #947e3d;
+  /* already have   */
   --white: white;
   --black: black;
+  --green4: #006622;
+  --green5: #00cc66;
+  /* already have   */
+  --dark-sea-green: DarkSeaGreen;
+  --edinburgh-stone2: #a88d3b;
+  --edinburgh-stone3: #947e3d;  
   --landscape-top-height: 400px;
   --edinburgh-clock-height: 300px;
   --calton-hill-height: 150px;
   --national-monument-height: 100px;
   --nelson-monument-height: 200px;
   --dugald-stewart-height: 150px;
+}
+
+.calton-hill {
+    position: absolute;
+    background-color: var(--green1);
+    background: linear-gradient(to top left, var(--green5), var(--green4));
+    height: var(--calton-hill-height);
+    width: 400px;
+    left: 100px;
+    top: calc(var(--landscape-top-height) - var(--calton-hill-height));
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    z-index: 1;
+}
+
+.national-monument-outer {
+  position: relative;
+  height: var(--national-monument-height);
+  width: 200px;
+  left: 130px;
+  top: calc(var(--landscape-top-height) - var(--calton-hill-height) - var(--national-monument-height) - 25px); /*ALTERED HERE*/
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.national-monument-top, .national-monument-pillars {
+  background-color: var(--edinburgh-stone2);
+}
+
+.national-monument-pillars {
+  width: 10px;
+  height: 80%;
+}
+
+.national-monument-top {
+  height: 20%;
+  width: 100%;
 }
 
 .edinburgh-clock-outer {
