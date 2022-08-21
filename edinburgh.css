@@ -36,7 +36,7 @@ html {
     top: calc(var(--landscape-top-height) - var(--calton-hill-height));
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .national-monument-outer {
@@ -49,6 +49,7 @@ html {
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 .national-monument-top, .national-monument-pillars {
@@ -67,10 +68,103 @@ html {
   width: 100%;
 }
 
+div[class*="nelson-"] {
+  border: thin solid var(--black);
+  background-color: var(--regular-grey);
+}
+
+.outer-nelson {
+  position: absolute;
+  left: 300px;
+  width: 100px;
+  height: 200px;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+
+div[class*="cross-nelson-"] {
+  background-color: white;
+}
+
+.cross-nelson {
+  height: 20px;
+  width: 25px;
+  position: relative;
+}
+
+.cross-nelson-h {
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  top: 2px;
+  left: 4px;
+}
+
+.cross-nelson-v {
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  left: 10px;
+}
+
+.nelson-top {
+  height: 20px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nelson-top-base {
+  height: 10px;
+  width: 40px;
+}
+
+.nelson-main-col {
+  height: 120px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nelson-main-sub {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div[class*="window-nelson"] {
+  background-color: var(--white);
+  border: thin solid var(--black);
+}
+
+.window-nelson {
+  height: 20px;
+  width: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.window-nelson-small {
+  height: 12px;
+  width: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.nelson-base {
+  height: 30px;
+  width: 100%;
+}
+
 .outer-dgs {
   position: relative;
   left: 400px;
-  z-index: 1;
+  z-index: 13;
   width: 72px;
   display: flex;
   align-items: center;
