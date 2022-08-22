@@ -16,8 +16,6 @@ html {
 :root {
 /*   animation timings -------------*/
   --whole-scene-move-sec: 60s;
-  --nessie-rise-delay: 13s;
-  --nessie-rise-duration: 2s;
   
 /*   colors -------------*/
   --brown: #bf8040;
