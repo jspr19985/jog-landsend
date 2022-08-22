@@ -211,18 +211,17 @@ div[class*="kessock-cable-small-"] {
 /* nessie */
 
 @keyframes nessie-rise  {
-  100% {
-     transform: translate(0, calc(var(--nessie-outer-height) - calc(var(--nessie-outer-height) * 2)));
-  }
+  50% { transform: translate(0, calc(var(--nessie-outer-height) - calc(var(--nessie-outer-height) * 2))); }
+  60% { transform: translate(0, calc(var(--nessie-outer-height) - calc(var(--nessie-outer-height) * 2))); }
+  90% { transform: translate(0); }
+  100% { transform: translate(0); }
 }
 
 .nessie-outer {
   position: relative;
   top: var(--landscape-top-height);
   z-index: -1;
-  animation: nessie-rise var(--nessie-rise-duration);
-  animation-fill-mode: forwards;
-  animation-delay: var(--nessie-rise-delay);
+  animation: nessie-rise 10s infinite ease-in-out;
   left: var(--nessie-left);
 }
 
