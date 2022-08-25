@@ -67,13 +67,13 @@ html {
 }
 
 .deer-container {
-    height: 530px;
-    position: absolute;
-    overflow: hidden;
-    width: 700px;
-    top: 110px;
-    left: var(--deer-left);
-    transform: scale(0.1); 
+  height: 530px;
+  position: absolute;
+  overflow: hidden;
+  width: 700px;
+  top: 110px;
+  left: var(--deer-left);
+  transform: scale(0.1);
 }
 
 .balmoral-outer {
@@ -465,12 +465,20 @@ div[class*="steeple-cross-sq"] {
     background: #c8906f;
 }
 
+@keyframes move-leg-1 {
+  0% {transform: rotate(-68deg);}
+  20% {transform: rotate(0deg);} /*top*/
+  40% {transform: rotate(0deg);} /*top (pause)*/
+  100% {transform: rotate(-68deg);}   
+}
+
 #deer .legs .leg-1 {
     top: 335px;
     width: 137px;
     height: 32px;
     left: 188px;
     border-radius: 66px 0 69px 0;
+    animation: move-leg-1 15s infinite;
 }
 
 #deer .legs .leg-2 {
@@ -626,6 +634,13 @@ div[class*="steeple-cross-sq"] {
     background: #7A564A;
 }
 
+@keyframes move-hoof-1 {
+  0% {transform: rotate(80deg) skewX(48deg); top: 410px; left: 204px;}  
+  20% {transform: rotate(0deg) skewX(48deg); top: 366px; left: 224px;} /*top*/
+  40% {transform: rotate(0deg) skewX(48deg); top: 366px; left: 224px;} /*top (pause)*/ 
+  100% {transform: rotate(80deg) skewX(48deg); top: 410px; left: 204px;}   
+}
+
 #deer .hooves .hoof-1 {
     width: 28px;
     height: 59px;
@@ -633,6 +648,7 @@ div[class*="steeple-cross-sq"] {
     left: 224px;
     transform: skewX(48deg);
     z-index: -3;
+    animation: move-hoof-1 15s infinite;
 }
 
 #deer .hooves .hoof-1:after {
@@ -649,7 +665,6 @@ div[class*="steeple-cross-sq"] {
 #deer .hooves .hoof-1:before {
      position: absolute;
      content: "";
-     /* background: red; */
      height: 0;
      width: 0;
      border-style: solid;
@@ -706,7 +721,6 @@ div[class*="steeple-cross-sq"] {
 
 #deer .hooves .hoof-2:after {
     content: "";
-    /* background: red; */
     position: absolute;
     bottom: 0;
     height: 0;
