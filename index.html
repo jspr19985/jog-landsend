@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="/inverness/inverness.css"/>
   <link rel="stylesheet" href="/benNevis/benNevis.css"/>
   <link rel="stylesheet" href="/balmoral/balmoral.css"/>
+  <link rel="stylesheet" href="/balmoral/flag.css"/>
   <link rel="stylesheet" href="/scottishVillage/scottishVillage.css"/>
   <link rel="stylesheet" href="/edinburgh/edinburgh.css"/>
 </head>
@@ -38,12 +39,13 @@
       fetch("./inverness/inverness.html").then(value => value.text()),
       fetch("./benNevis/benNevis.html").then(value => value.text()),
       fetch("./balmoral/balmoral.html").then(value => value.text()),
+      fetch("./balmoral/flag.html").then(value => value.text()),
       fetch("./scottishVillage/scottishVillage.html").then(value => value.text()),
       fetch("./edinburgh/edinburgh.html").then(value => value.text())
-    ]).then(([johnOGroats , inverness, benNevis, balmoral, scottishVillage, edinburgh
+    ]).then(([johnOGroats, inverness, benNevis, balmoral, flag, scottishVillage, edinburgh
              ]) => { 
       return [
-        johnOGroats, inverness, benNevis ,balmoral, scottishVillage, edinburgh
+        johnOGroats, inverness, benNevis ,balmoral, flag, scottishVillage, edinburgh
       ]
     })
       .then(items => {
