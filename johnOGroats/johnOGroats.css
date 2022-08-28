@@ -2,14 +2,6 @@ body {
   margin: 0;
 }
 
-.whole-scene {
-  top: 0;
-  position: absolute;
-  animation: whole-scene-move 10s;
-  animation-fill-mode: forwards;
-  animation-delay: 8s;
-}
-
 .john-o-groats {
   position: absolute;
   display: flex;
