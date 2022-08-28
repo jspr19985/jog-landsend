@@ -15,7 +15,7 @@ html {
 
 :root {
 /*   animation timings -------------*/
-  --whole-scene-move-sec: 60s;
+  --whole-scene-move-sec: 25s;
   
 /*   colors -------------*/
   --brown: #bf8040;
