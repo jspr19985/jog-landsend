@@ -133,7 +133,7 @@
   left: var(--braveheart-left);
   width: 300px;
   transform: scale(0.15);
-  top: 280px;
+  top: -278px;
   animation: braveheart-jump 2s infinite;
 }
 
@@ -499,7 +499,7 @@ div[class*="braveheart-sword-"] {
 
 .braveheart-speech {
   left: var(--braveheart-speech-left);
-  top: 100px;
+  top: -450px;
   animation: braveheart-speech-flicker 2s infinite ease-out;
 }
 
