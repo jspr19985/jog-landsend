@@ -9,13 +9,13 @@ html {
 
 @keyframes drive { from{ left: 20px; } }
 @keyframes walk { 0% {left: 945px;} 100% {left: 895px;} } 
-@keyframes whole-scene-move { 100% { transform: translate(-4000px); } }
+@keyframes whole-scene-move { 100% { transform: translate(-5000px); } }
 @keyframes drive-off { 100% { transform: translate(150px); } }
 
 
 :root {
 /*   animation timings -------------*/
-  --whole-scene-move-sec: 25s;
+  --whole-scene-move-sec: 35s;
   
 /*   colors -------------*/
   --brown: #bf8040;
@@ -64,6 +64,14 @@ html {
   --regular-grey: grey;
   --sea-green: mediumaquamarine;
   --teal: teal;
+  --dark-sea-green: DarkSeaGreen;
+  --edinburgh-stone2: #a88d3b;
+  --edinburgh-stone3: #947e3d;  
+  --edinburgh-clock-height: 300px;
+  --calton-hill-height: 150px;
+  --national-monument-height: 100px;
+  --nelson-monument-height: 200px;
+  --dugald-stewart-height: 150px;
   
 /*   fonts ---------------*/
   --fsp-font: 'Dosis', sans-serif;
@@ -98,6 +106,7 @@ html {
   --balmoral-flag-left: 3050px;
   --braveheart-speech-left: 4600px;
   --capital-signpost-left: 4800px;
+  --edinburgh-sunset-left: 4900px;
 }
 
 .whole-scene {

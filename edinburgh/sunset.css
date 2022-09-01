@@ -119,8 +119,11 @@ html {
   #sky {
     position: absolute;
     height: 400px;
-    width: 100%;
-    animation: sunsetGradient 10s forwards linear;
+    width: 1700px;
+    animation: sunsetGradient 10s forwards linear 30s;
+    left: calc(var(--edinburgh-sunset-left) - 170px);
+    top: 0;
+    z-index: -1;
   }
 
   @keyframes starsAppear {
@@ -130,7 +133,7 @@ html {
   #sky-overlay {
     position: absolute;
     height: 400px;
-    width: 100%;
+    width: 1700px;
     background-image:
     radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
     radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
@@ -140,6 +143,9 @@ html {
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     opacity: 0;
     animation: starsAppear 10s forwards 8s;
+    left: calc(var(--edinburgh-sunset-left) - 170px);
+    top: 0;
+    z-index: 1;
   }
 
   @keyframes moveMoon {
@@ -147,9 +153,9 @@ html {
   }
 
   #moon {
-    position: relative;
-    left: 1200px;
-    top: 100px;
+    position: absolute;
+    left: calc(1200px + var(--edinburgh-sunset-left));
+    top: 50px;
     background-color: var(--moon);
     background-image: linear-gradient(
     45deg,
@@ -162,8 +168,12 @@ html {
     height: 50px;
     width: 50px;
     transform: translateY(-200px);
-    animation: moveMoon 3s forwards 9s;
+    animation: moveMoon 3s forwards 39s;
   }  
+
+  .star-container {
+    transform: translateX(1000px);
+  }
 
   @keyframes shine {   
     0% {transform: scale(0.45);}
