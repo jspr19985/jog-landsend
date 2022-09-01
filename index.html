@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/balmoral/flag.css"/>
   <link rel="stylesheet" href="/scottishVillage/scottishVillage.css"/>
   <link rel="stylesheet" href="/edinburgh/edinburgh.css"/>
+  <link rel="stylesheet" href="/edinburgh/sunset.css"/>
 </head>
 
 <body class="whole-page">
@@ -41,11 +42,12 @@
       fetch("./balmoral/balmoral.html").then(value => value.text()),
       fetch("./balmoral/flag.html").then(value => value.text()),
       fetch("./scottishVillage/scottishVillage.html").then(value => value.text()),
-      fetch("./edinburgh/edinburgh.html").then(value => value.text())
-    ]).then(([johnOGroats, inverness, benNevis, balmoral, flag, scottishVillage, edinburgh
+      fetch("./edinburgh/edinburgh.html").then(value => value.text()),
+      fetch("./edinburgh/sunset.html").then(value => value.text())
+    ]).then(([johnOGroats, inverness, benNevis, balmoral, flag, scottishVillage, edinburgh, sunset
              ]) => { 
       return [
-        johnOGroats, inverness, benNevis ,balmoral, flag, scottishVillage, edinburgh
+        johnOGroats, inverness, benNevis ,balmoral, flag, scottishVillage, edinburgh, sunset
       ]
     })
       .then(items => {
