@@ -225,6 +225,7 @@ div[class*="dgs-"] {
     height: var(--edinburgh-clock-height);
     width: 70px;
     left: calc(650px + var(--edinburgh-sunset-left));
+    z-index: 2;
   }
   
   .edinburgh-clock-top {
@@ -321,6 +322,7 @@ div[class*="dgs-"] {
     height: 200px;
     top: -200px;
     left: 300px;
+    z-index: 2;
   }
   
   .er-outline {
