@@ -18,3 +18,10 @@
 ```http://localhost:8080```  
 
 Also found at https://codepen.io/jsp123/project/full/ZRbjpz
+
+## Count files
+
+As there are only `50` files allowed by codepen, it may be necessary to count the files created. From the root run:   
+`find . -type f -not -path '*/.*' | wc -l`
+
+(there are a couple extra files in main project `generateGradient.js` and `favicon.ico`).
