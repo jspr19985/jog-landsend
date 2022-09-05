@@ -1,0 +1,109 @@
+.wte-outer {
+    position: absolute;
+    top: 240px;
+    left: var(--wte-left);
+}
+
+.welcome-to-england-top {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 250px;
+    background-color: var(--white);
+    letter-spacing: 1px;
+    font-family: var(--signpost-font);
+    font-size: 20px;
+    font-weight: lighter;
+    border: medium solid var(--black);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wte-sign-top {
+    display: flex;
+    height: 80%;
+    width: 90%;
+}
+
+.wte-flag {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+}
+
+.wte-flag-top, .wte-flag-bottom  {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.wte-flag-bl, .wte-flag-br, .wte-flag-tl, .wte-flag-tr  {
+    width: 50%;
+    height: 100%;
+}
+
+.wte-flag-tl {
+    border-right: medium solid var(--red);
+    border-bottom: medium solid var(--red);
+    border-left: thin solid var(--black);
+    border-top: thin solid var(--black);
+}
+
+.wte-flag-tr {
+    border-left: medium solid var(--red);
+    border-bottom: medium solid var(--red);
+    border-right: thin solid var(--black);
+    border-top: thin solid var(--black);
+}
+
+.wte-flag-bl {
+    border-right: medium solid var(--red);
+    border-top: medium solid var(--red);
+    border-left: thin solid var(--black);
+    border-bottom: thin solid var(--black);
+}
+.wte-flag-br {
+    border-left: medium solid var(--red);
+    border-top: medium solid var(--red);
+    border-right: thin solid var(--black);
+    border-bottom: thin solid var(--black);
+}
+
+.wte-all-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wte-welcome {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.wte-text {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.wte-bottom-1, .wte-bottom-2  {
+    position: absolute;  
+    border: thin solid var(--black);
+    width: 10px;
+    top: 100px;
+    left: 30px;
+    height: 70px;
+    background-color: var(--black);
+}
+
+.wte-bottom-2 {
+    left: 200px;
+}
+
