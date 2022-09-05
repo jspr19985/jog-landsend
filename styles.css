@@ -9,13 +9,13 @@ html {
 
 @keyframes drive { from{ left: 20px; } }
 @keyframes walk { 0% {left: 945px;} 100% {left: 895px;} } 
-@keyframes whole-scene-move { 100% { transform: translate(-5000px); } }
+@keyframes whole-scene-move { 100% { transform: translate(-6000px); } }
 @keyframes drive-off { 100% { transform: translate(150px); } }
 
 
 :root {
 /*   animation timings -------------*/
-  --whole-scene-move-sec: 35s;
+  --whole-scene-move-sec: 60s;
   
 /*   colors -------------*/
   --brown: #bf8040;
@@ -107,6 +107,7 @@ html {
   --braveheart-speech-left: 4600px;
   --capital-signpost-left: 4800px;
   --edinburgh-sunset-left: 4900px;
+  --wte-left: 6500px;
 }
 
 .whole-scene {
