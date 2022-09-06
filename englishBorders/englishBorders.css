@@ -1,3 +1,13 @@
+#night-sky {
+    position: absolute;
+    height: 400px;
+    width: 1700px;
+    left: var(--night-sky-left);
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, hsl(270,100%,10%),   hsl(270,100%,30%),   hsl(270,100%,50%));
+}
+
 .wte-outer {
     position: absolute;
     top: 240px;
