@@ -119,8 +119,8 @@ html {
   #sky {
     position: absolute;
     height: 400px;
-    width: 1700px;
-    animation: sunsetGradient 10s forwards linear 30s;
+    width: 2000px;
+    animation: sunsetGradient 3s forwards linear 37s;
     left: calc(var(--edinburgh-sunset-left) - 170px);
     top: 0;
     z-index: -1;
